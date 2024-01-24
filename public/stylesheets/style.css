@@ -4,10 +4,11 @@
   
 }
 :root{
-  --BG-black:#0D0D0D;
+  --BG-black:#2b2b2b;
   --BG-gray:#BFBFBF;
   --BG-orange-1:#BF0F1E;
   --BG-orange-2:#F23D3D;
+  --BG-blue:#0072F5;
   --BG-lago:#579AF2;
   --COLOR-whait:rgb(239, 239, 239);
   --COLOR-dark:rgb(71, 71, 71);
@@ -18,10 +19,20 @@ body {
   background-color: var(--BG-black);
   color: var(--COLOR-whait);
 }
+header{
+  height: 4rem;
+  background-color: var(--BG-blue);
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr 4fr;
+}
 /* Titulos */
 h1{
   color: var(--COLOR-whait);
   text-align: center;
+}
+header>h1{
+  display: grid;
+  place-content: center;
 }
 section h1{
   text-align: left;
@@ -34,19 +45,32 @@ ul{
 a {
   color: #00B7FF;
 }
-/* Contenedores */
-section{
+/* contenedores */
+article{
+  border-radius: .5rem;
+  padding: 1rem;
+}
+/* Separadores */
+hr{
+  height: 1rem;
+  background-color: var(--BG-black);
+}
+/*  ---------- CLASES */
+.contenedor0{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--BG-blue);
+}
+.contenedor1{
   margin: 1rem;
   padding: .5rem;
-
 }
-
-/*  ---------- CLASES */
-
 .ejemplo{
   display: grid;
   grid-auto-flow: dense;
-  grid-auto-rows: 20rem;
+  grid-auto-rows: 6rem;
   grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
   background-color: var(--BG-orange-1);
   border-radius: .7rem;
@@ -72,4 +96,16 @@ section{
 .result{
   background-color: var(--BG-lago);
   color: var(--COLOR-dark)
+}
+.sombra{
+  box-shadow: 0 0 1rem #2b2b2b;
+}
+.hbsTop{
+  display: grid;
+  place-content: center;
+}
+.hbsTop>img{
+  position: relative;
+  transform: translateY(2rem) rotate(25deg);
+  width: 15rem;
 }

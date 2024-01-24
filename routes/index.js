@@ -48,7 +48,7 @@ let obj = {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Clase PEDRO', obj });
+  res.render('index', { obj });
 });
 
 module.exports = router;

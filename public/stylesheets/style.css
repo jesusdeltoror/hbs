@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+:root{
+  --BG-black:#0D0D0D;
+  --BG-gray:#BFBFBF;
+  --BG-orange-1:#BF0F1E;
+  --BG-orange-2:#F23D3D;
+  --BG-lago:#579AF2;
+  --COLOR-whait:rgb(239, 239, 239);
+  --COLOR-dark:rgb(71, 71, 71);
+}
+
+body {
+  font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: var(--BG-black);
+  color: var(--COLOR-whait);
+}
+/* Titulos */
+h1{
+  color: var(--COLOR-whait);
+  text-align: center;
+}
+section h1{
+  text-align: left;
+}
+/* Listas */
+ul{
+  padding-left: 2rem;
+}
+/* Link */
+a {
+  color: #00B7FF;
+}
+/* Contenedores */
+section{
+  margin: 1rem;
+  padding: .5rem;
+
+}
+
+/*  ---------- CLASES */
+
+.ejemplo{
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  background-color: var(--BG-orange-1);
+  border-radius: .7rem;
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.ejemplo>*{
+  display: grid;
+  place-content: center;
+  border-radius: .7rem;
+  margin: .5rem;
+  padding: .5rem;
+}
+.text{
+  background-color: var(--BG-orange-2);
+  color: var(--COLOR-whait);
+}
+.code{
+  background-color: rgb(223, 223, 223);
+  color: var(--COLOR-dark);
+}
+.result{
+  background-color: var(--BG-lago);
+  color: var(--COLOR-dark)
+}

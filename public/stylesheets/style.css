@@ -4,7 +4,7 @@
   
 }
 :root{
-  --BG-black:#2b2b2b;
+  --BG-fondo:#dfdcdc;
   --BG-gray:#BFBFBF;
   --BG-orange-1:#BF0F1E;
   --BG-orange-2:#F23D3D;
@@ -16,7 +16,7 @@
 
 body {
   font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: var(--BG-black);
+  background-color: var(--BG-fondo);
   color: var(--COLOR-whait);
 }
 header{
@@ -53,7 +53,7 @@ article{
 /* Separadores */
 hr{
   height: 1rem;
-  background-color: var(--BG-black);
+  background-color: var(--BG-fondo);
 }
 /*  ---------- CLASES */
 .contenedor0{
